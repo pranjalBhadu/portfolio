@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Mrs+Saint+Delafield&display=swap');
+
+:root{
+    --barcode:  'Libre Barcode 39 Text', cursive;
+    --delafield: 'Mrs Saint Delafield', cursive;
+    --sea-green: #46AFB9 ;
+    --dark-green: #184C51;
+    --skin: #F5E4C3;
+    --pink: #DF8C95;
+    --brown: #532A31;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media(min-width: 21.87em){
+    #nav-bar,footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 3.2rem;
+        background-color: var(--pink);
+        font-size: 1.8rem;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        color: var(--brown);
+    }
+    .logo-nav{
+        font-family: var(--barcode);
+    }
+    .menu-mob{
+        cursor: pointer;
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        height: 76vh;
+    }
+    footer{
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+    .logo-foot{
+        font-family: var(--delafield);
+    }
+}
+
+@media(min-width: 43.75em){
+   
+}
+
+@media(min-width: 62em){
+
+}
+
+@media(min-width: 87em){
+
+}
