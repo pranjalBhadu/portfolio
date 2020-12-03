@@ -5,6 +5,6 @@ menuToggle.addEventListener('click', function(){
         menu.style.display = 'flex';
     }
     else if(menu.style.display == 'flex'){
-        menu.style.display = '';
+        menu.style.display = 'none';
     }
 })

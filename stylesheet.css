@@ -68,8 +68,51 @@ body{
         border-radius: 1rem;
         padding: 1.3rem;
         user-select: none;
+        animation-name: menu-drop;
+        animation-duration: 0.5s;
     }
     
+    @keyframes menu-drop{
+        from{
+            opacity: 0;
+            height: 1rem;
+        }
+        10%{
+            height: 2rem;
+        }
+        20%{
+            height: 3rem;
+        }
+        30%{
+            height: 4rem;
+        }
+        40%{
+            height: 5rem;
+        }
+        to{
+            opacity: 1;
+        } 
+    }
+
+    /* @keyframes menu-close {
+        10%{
+            height: 8rem;
+        }
+        20%{
+            height: 7rem;
+        }
+        30%{
+            height: 6rem;
+        }
+        40%{
+            height: 5rem;
+        }
+        to{
+            opacity: 0;
+            height: 0;
+        } 
+    }*/
+
     .menu-mob ul li{
         margin-bottom: 0.9rem;
         text-align: center;
@@ -102,16 +145,50 @@ body{
     .logo-foot{
         font-family: var(--delafield);
     }
+    header{
+        background-color: var(--dark-green);
+    }
     .about{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        text-align: justify;
+        padding: 2.25rem 1.5rem;
+        color: var(--skin);
+        font-size: 1.2rem;
+    }
+    .about .text h2{
+        font-size: 1.7rem;
+        margin-bottom: 0.5rem;
+    }
+    .about .name{
+        color: var(--pink);
+        
     }
     .about img{
-        height: 100px;
-        width: 100px;
+        height: 11.25rem;
+        width: 11.25rem;
         border-radius: 50%;
+        align-self: center;
+        border: 3px solid var(--sea-green);
+    }
+    .about .text{
+        display: flex;
+        flex-direction: column;
+        margin: 1.2rem 1rem 0;
+    }
+    .about .text .skill{
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: var(--pink);
+        margin-bottom: 0.5rem;
+    }
+    .about .text .codepen-work a{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--pink);
+        user-select: none;
     }
 }
 
@@ -127,6 +204,24 @@ body{
    }
    .menu ul li{
     margin-right: 2rem;
+    }
+    .about{
+        flex-direction: row-reverse;
+    }
+    .about img{
+        height: 17rem;
+        width: 17rem;
+    }
+    .about .text{
+        width: 50vw;
+        margin-right: 2.25rem;
+        text-align: justify;
+    }
+    .about .text h2{
+        font-size: 2.25rem;
+    }
+    .about .text .skill{
+
     }
 }
 
