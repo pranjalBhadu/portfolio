@@ -143,7 +143,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        text-align: left;
+        text-align: center;
         padding: 2.25rem 1.5rem;
         color: var(--skin);
         font-size: 1.2rem;
@@ -195,17 +195,18 @@ body{
    .menu ul li{
     margin-right: 2rem;
     }
-    .about{
-        flex-direction: row-reverse;
+    header{
+        width: 100vw;
+    }
+    header .about{
+       
     }
     .about img{
-        height: 17rem;
-        width: 17rem;
+        height: 20rem;
+        width: 20rem;
     }
     .about .text{
-        width: 50vw;
-        margin-right: 2.25rem;
-        text-align: justify;
+        text-align: center;
     }
     .about .text h2{
         font-size: 2.25rem;
@@ -213,11 +214,31 @@ body{
     .about .text .skill{
 
     }
+
 }
 
 @media(min-width: 62em){
     #nav-bar{
         padding: 0 3rem;
+    }
+    .about{
+        flex-direction: row-reverse;
+    }
+    .about .text{
+        text-align: left;
+        width: 50%;
+        margin-right: 6.25rem;
+        justify-content: center;
+    }
+    .about .text h2{
+        font-size: 3.5rem;
+    }
+    .about .text .skill{
+        font-size: 1.8rem;
+    }
+    .about img{
+        height: 25rem;
+        width: 25rem;
     }
 }
 
