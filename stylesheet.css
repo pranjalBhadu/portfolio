@@ -68,8 +68,8 @@ body{
         border-radius: 1rem;
         padding: 1.3rem;
         user-select: none;
-        animation-name: menu-drop;
-        animation-duration: 0.5s;
+        animation: menu-drop 0.5s ease-out;
+        
     }
     
     @keyframes menu-drop{
@@ -93,25 +93,6 @@ body{
             opacity: 1;
         } 
     }
-
-    /* @keyframes menu-close {
-        10%{
-            height: 8rem;
-        }
-        20%{
-            height: 7rem;
-        }
-        30%{
-            height: 6rem;
-        }
-        40%{
-            height: 5rem;
-        }
-        to{
-            opacity: 0;
-            height: 0;
-        } 
-    }*/
 
     .menu-mob ul li{
         margin-bottom: 0.9rem;
@@ -153,7 +134,7 @@ body{
         flex-direction: column;
         justify-content: center;
         align-content: center;
-        text-align: justify;
+        text-align: left;
         padding: 2.25rem 1.5rem;
         color: var(--skin);
         font-size: 1.2rem;
