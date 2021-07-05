@@ -31,6 +31,44 @@ body{
     user-select: none;
 }
 
+.social{
+    margin: 24px 0;
+}
+
+.fa {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-codepen{
+      background: black;
+      color: white;
+  }
+
+  .fa-linkedin{
+      background: #0077B5;
+      color: white;
+  }
+
+  .fa-github{
+      background: #211F1F;
+      color: white;
+  }
 @media(min-width: 21.87em){
     #nav-bar,footer{
         width: 100%;
@@ -42,9 +80,6 @@ body{
         font-size: 2.5rem;
         padding: 0 1.5rem;
         color: var(--brown);
-    }
-    #nav-bar{
-        
     }
     .logo-nav{
         font-family: var(--barcode);
@@ -159,9 +194,9 @@ body{
     .about img{
         height: 11.25rem;
         width: 11.25rem;
-        border-radius: 50%;
+        /* border-radius: 50%; */
         align-self: center;
-        border: 3px solid var(--sea-green);
+        /* border: 3px solid var(--sea-green); */
     }
     .about .text{
         display: flex;
@@ -180,6 +215,99 @@ body{
         color: var(--pink);
         user-select: none;
     }
+
+    .skills{
+        background-color: var(--pink);
+        padding: 2rem 1rem;
+    }
+
+    .skills .window{
+       background-color: var(--dark-green);
+       border-radius: 0.5rem;
+    }
+
+    .skills .window .titlebar{
+        background-color: var(--skin);
+        height: 4rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        color: var(--dark-green);
+        font-weight: bold;
+        font-size: 1.8rem;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+    }
+
+    .skills .window .content{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        
+    }
+
+    .skills .window .content .skill-set{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 3rem;
+    }
+    .skills .window .content .skill{
+        margin: 1rem;
+    }
+
+    .contact{
+        background-color: var(--dark-green);
+        padding: 2rem 1rem;
+    }
+
+    .contact .window{
+        background-color: var(--pink);
+        border-radius: 0.5rem;
+     }
+
+     .contact .window .titlebar{
+        background-color: var(--skin);
+        height: 4rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        color: var(--brown);
+        font-weight: bold;
+        font-size: 1.8rem;
+        padding-left: 1rem;
+        padding-top: 0.5rem;
+    }
+    .contact form{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .contact form input, .contact textarea, .contact button{
+        height: 2.5rem;
+        width: 80%;
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+        border: 0;
+        padding: 0.5rem;
+    }
+
+    .contact textarea{
+        height: 5rem;
+    }
+
+    .contact button{
+        background-color: var(--sea-green);
+        color: var(--brown);
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 1rem 0;
+        cursor: pointer;
+        box-shadow: #211F1F;;
+    }
+
+    :focus {outline: none;
+    }
+    
+
 }
 
 @media(min-width: 43.75em){
@@ -211,8 +339,13 @@ body{
     .about .text h2{
         font-size: 2.25rem;
     }
-    .about .text .skill{
-
+    .skills .window .content{
+        display: flex;
+        flex-direction: row;
+    }
+    .skills .window .content .skill-set{
+        
+        margin-left: 0rem;
     }
 
 }
@@ -239,6 +372,14 @@ body{
     .about img{
         height: 25rem;
         width: 25rem;
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact .window{
+        width: 30rem;
     }
 }
 
